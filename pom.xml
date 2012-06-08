@@ -6,15 +6,16 @@
   <parent>
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>analysis-pom</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.0-M2-1</version>
     <relativePath>../analysis-pom/pom.xml</relativePath>
   </parent>
 
+  <groupId>org.hudsonci.plugins</groupId>
   <artifactId>pmd</artifactId>
   <packaging>hpi</packaging>
   <name>PMD Plug-in</name>
   <version>3.29-SNAPSHOT</version>
-  <url>http://wiki.jenkins-ci.org/x/GAAHAQ</url>
+  <url>https://wiki.hudson-ci.org/display/HUDSON/PMD+Plugin</url>
   <description>This plug-in generates the trend report for PMD, an
     open source static code analysis program.</description>
 
@@ -33,6 +34,10 @@
       <comments>All YUI source code is under the BSD license.</comments>
     </license>
   </licenses>
+
+  <properties>
+    <hudsonTags>recommended,report</hudsonTags>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -54,9 +59,9 @@
   </dependencies>
 
   <scm>
-    <connection>scm:git:git://github.com/hudson-plugins/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:hudson-plugins/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/hudson-plugins/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/hudson3-plugins/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hudson3-plugins/${project.artifactId}-plugin.git</developerConnection>
+    <url>https://github.com/hudson3-plugins/${project.artifactId}-plugin</url>
   </scm>
 
 </project>  

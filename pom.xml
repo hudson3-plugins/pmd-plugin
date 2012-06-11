@@ -43,7 +43,7 @@
     <dependency>
       <groupId>org.hudsonci.plugins</groupId>
       <artifactId>analysis-core</artifactId>
-      <version>1.42-SNAPSHOT</version>
+      <version>1.42</version>
     </dependency>
     <dependency>
       <groupId>org.jvnet.hudson.plugins</groupId>
@@ -57,12 +57,6 @@
       <version>4.2.6</version>
     </dependency>
   </dependencies>
-
-  <scm>
-    <connection>scm:git:git://github.com/hudson3-plugins/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:hudson3-plugins/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/hudson3-plugins/${project.artifactId}-plugin</url>
-  </scm>
 
 </project>  
 

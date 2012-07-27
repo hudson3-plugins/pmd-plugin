@@ -14,7 +14,7 @@
   <artifactId>pmd</artifactId>
   <packaging>hpi</packaging>
   <name>PMD Plug-in</name>
-  <version>3.29-h-1-SNAPSHOT</version>
+  <version>3.29-h-1</version>
   <url>https://wiki.hudson-ci.org/display/HUDSON/PMD+Plugin</url>
   <description>This plug-in generates the trend report for PMD, an
     open source static code analysis program.</description>

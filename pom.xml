@@ -1,21 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
-  <!-- Forked from Jenkins pmd-plugin 3.29 -->
 
   <parent>
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>analysis-pom</artifactId>
-    <version>3.0.0-M3</version>
-    <relativePath>../analysis-pom/pom.xml</relativePath>
+    <version>1.42-h-1</version>
+    <relativePath/>
   </parent>
 
   <groupId>org.hudsonci.plugins</groupId>
   <artifactId>pmd</artifactId>
   <packaging>hpi</packaging>
   <name>PMD Plug-in</name>
-  <version>3.29-h-2-SNAPSHOT</version>
-  <url>https://wiki.hudson-ci.org/display/HUDSON/PMD+Plugin</url>
+  <version>3.34-h-1-SNAPSHOT</version>
+  <url>http://wiki.hudson-ci.org/x/GAAHAQ</url>
   <description>This plug-in generates the trend report for PMD, an
     open source static code analysis program.</description>
 
@@ -35,20 +34,16 @@
     </license>
   </licenses>
 
-  <properties>
-    <hudsonTags>recommended,report</hudsonTags>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.hudsonci.plugins</groupId>
       <artifactId>analysis-core</artifactId>
-      <version>1.42-h-1</version>
+      <version>1.49-h-1</version>
     </dependency>
     <dependency>
-      <groupId>org.jvnet.hudson.plugins</groupId>
+      <groupId>org.hudsonci.plugins</groupId>
       <artifactId>analysis-test</artifactId>
-      <version>1.8</version>
+      <version>1.10-h-1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -57,48 +52,33 @@
       <version>4.2.6</version>
       <exclusions>
         <exclusion>
-          <groupId>ant</groupId>
-          <artifactId>ant</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>asm</groupId>
-          <artifactId>asm</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>xalan</groupId>
-          <artifactId>xalan</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>dom4j</groupId>
-          <artifactId>dom4j</artifactId>
+          <groupId>com.ibm.icu</groupId>
+          <artifactId>icu4j</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.jvnet.hudson.dom4j</groupId>
-      <artifactId>dom4j</artifactId>
-      <version>1.6.1-hudson-3</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>xalan</groupId>
-      <artifactId>xalan</artifactId>
-      <version>2.7.1</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
       <version>2.8.1</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>xml-apis</groupId>
-      <artifactId>xml-apis</artifactId>
-      <version>1.3.03</version>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
 
-</project>  
+  <scm>
+    <connection>scm:git:git://github.com/hudson3-plugins/pmd-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hudson3-plugins/pmd-plugin.git</developerConnection>
+    <url>https://github.com/hudson3-plugins/pmd-plugin</url>
+  </scm>
 
+  <developers>
+    <developer>
+      <id>drulli</id>
+      <name>Ulli Hafner</name>
+      <email>ullrich.hafner@gmail.com</email>
+    </developer>
+  </developers>
+  
+  <properties>
+    <hudsonTags>report</hudsonTags>
+  </properties>
+</project>

@@ -1,6 +1,6 @@
 package hudson.plugins.pmd.parser;
 
-import static junit.framework.Assert.*;
+import static org.junit.Assert.*;
 import hudson.plugins.analysis.core.ParserResult;
 import hudson.plugins.analysis.util.model.FileAnnotation;
 import hudson.plugins.analysis.util.model.MavenModule;
@@ -46,7 +46,7 @@ public class PmdParserTest {
      *
      * @throws InvocationTargetException
      *      if the file could not be read
-     * @see <a href="http://issues.jenkins-ci.org/browse/JENKINS-12801">Issue 12801</a>
+     * @see <a href="http://issues.jenkins-ci.org/browse/HUDSON-12801">Issue 12801</a>
      */
     @Test
     public void issue12801() throws InvocationTargetException {
